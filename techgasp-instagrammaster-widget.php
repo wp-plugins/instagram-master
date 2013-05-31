@@ -21,14 +21,15 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 		global $instagramsize;
 		extract( $args );
 		//Our variables from the widget settings.
-		$title = "Instagram Master";
+		$name = "Instagram Master";
+		$title = isset( $instance['title'] ) ? $instance['title'] :false;
 		$show_instagrambutton = isset( $instance['show_instagrambutton'] ) ? $instance['show_instagrambutton'] :false;
 		$username = $instance['username'];
 		echo $before_widget;
 		
 		// Display the widget title
 	if ( $title )
-		echo $before_title . $title . $after_title;
+		echo $before_title . $name . $after_title;
 		//Display Instagram Photos
 	
 		//Display View on Instagram Button
@@ -41,6 +42,7 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		//Strip tags from title and name to remove HTML
+		$instance['name'] = strip_tags( $new_instance['name'] );
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['show_instagrambutton'] = $new_instance['show_instagrambutton'];
 		$instance['username'] = $new_instance['username'];
@@ -48,10 +50,15 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 	}
 	function form( $instance ) {
 	//Set up some default widget settings.
-	$defaults = array( 'title' => __('Instagram Master', 'instagram master'), 'show_instagrambutton' => false, 'username' => false );
+	$defaults = array( 'name' => __('Instagram Master', 'instagram master'), 'title' => true, 'show_instagrambutton' => false, 'username' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
 		<b>Check the buttons to be displayed:</b>
+	<p>
+	<input type="checkbox" <?php checked( (bool) $instance['title'], true ); ?> id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" />
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><b><?php _e('Display Widget Title', 'instagram master'); ?></b></label></br>
+	</p>
+	<hr>
 	<p>
 	<input type="checkbox" <?php checked( (bool) $instance['show_instagrambutton'], true ); ?> id="<?php echo $this->get_field_id( 'show_instagrambutton' ); ?>" name="<?php echo $this->get_field_name( 'show_instagrambutton' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_instagrambutton' ); ?>"><b><?php _e('View on Instagram Button', 'instagram master'); ?></b></label></br>

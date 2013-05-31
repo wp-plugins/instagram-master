@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, instagram, techgasp, sharing, photo, picture, gallery, free, phone, application, plugin, widget
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv2 or later
 
 Instagram Master let's your show your latest Instagram photos and View on Instagram Button inside any widget position.
@@ -24,6 +24,7 @@ You have full control over the photo thumbnail display size in pixels to fit you
 
 **LITE Version Contains:**
 
+* Option to Display or Hide Widget Title
 * View on Instagram Button
 
 
@@ -31,6 +32,7 @@ You have full control over the photo thumbnail display size in pixels to fit you
 
 [Advanced Version Link](http://wordpress.techgasp.com/instagram-master/)
 
+* Option to Display or Hide Widget Title
 * View on Instagram Button
 * Full adaptive Instagram photos display, Packed with beautiful html5 and CSS, Full Control over photo thumbnail sizes, Full Control over number of thumbnails to display, Thumbnails with username a tag labels, Amazing Instagram photo Comments, Love and Share
 
@@ -76,6 +78,9 @@ You have full control over the photo thumbnail display size in pixels to fit you
 
 
 == Changelog ==
+
+= 2.1 =
+* Added option to Display or Hide Widget Title
 
 = 2.0 =
 * Stable Release
