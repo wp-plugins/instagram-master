@@ -1,7 +1,7 @@
 <div class="wrap">
 <div class="icon32" style="width:40px; vertical-align:middle;"><img src="../wp-content/plugins/instagram-master/techgasp-minilogo.png" alt="' . esc_attr__( 'TechGasp Plugins') . '" /><br /></div>
 
-<h2><b>TechGasp - Instagram Master LITE Version</b></h2>
+<h2><b>TechGasp - Instagram Master Lite Version</b></h2>
 <form method="post" action="techgasp-instagrammaster-admin.php"> 
 <p><b>About TechGasp:</b></p>
 <p>Major player in the Content Management System world! Joomla and Jomsocial Partner with more than 100 high quality, error free Extensions. We provide website customizations and development, SEO Optimization, Facebook Apps, etc. We have fast & furious specialized Hosting for WordPress and Joomla. Our promise, the use of minimal error free code with fast loading times. Also to avoid the implementation of useless Javascript and Ajax in CMS by replacing it with solida php, css, html5 and iframe. Check our website for more high quality extensions. Stay up to date by "like" and "follow" our facebook and twitter page for fresh news, releases and upgrades and updates.</p>
@@ -49,9 +49,8 @@
 <p>Copy and Paste this shortcode inside your pages or posts [instagrammaster id=xx] replace xx with your sidebar number, ie [instagrammaster id=sidebar-1]</p>
 <p><a class="button-primary" href="widgets.php" title="Widgets Page">To Widgets Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/instagram-master/" target="_blank" title="More Help">More Help</a> <a class="button-primary" href="http://wordpress.techgasp.com/instagram-master/" target="_blank" title="Instagram Master Advanced Version">Instagram Master Advanced Version</a></p>
 <hr>
-<p><h3>Instagram Master Advanced Version</h3></p>
-<p>Lite version contains View on Instagram Button.</p>
-<p>Advanced version contains View on Instagram Button plus Full adaptive Instagram photos display, Packed with beautiful html5 and CSS, Full Control over photo thumbnail sizes, Full Control over number of thumbnails to display, Thumbnails with username a tag labels, Amazing Instagram photo Comments, Love and Share</p>
+<p><h3>Instagram Master Lite Version</h3></p>
+<p>Upgrade to Advanced Version for full photo features.</p>
 <p><a class="button-primary" href="http://wordpress.techgasp.com/instagram-master/" target="_blank" title="Instagram Master Advanced Version">Instagram Master Advanced Version</a></p>
 </form>
 </div>

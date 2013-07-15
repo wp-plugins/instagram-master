@@ -12,9 +12,9 @@ register_widget( 'techgasp_instagrammaster_widget' );
 
 class techgasp_instagrammaster_widget extends WP_Widget {
 	function techgasp_instagrammaster_widget() {
-	$widget_ops = array( 'classname' => 'Pinterest Master', 'description' => __('Instagram Master lets your show your latest Instagram photos and View on Instagram Button inside any widget position. ', 'Instagram Master') );
+	$widget_ops = array( 'classname' => 'Intagram Master', 'description' => __('Instagram Master lets your show your latest Instagram photos and View on Instagram Button inside any widget position. ', 'Instagram Master') );
 	$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'techgasp_instagrammaster_widget' );
-	$this->WP_Widget( 'techgasp_instagrammaster_widget', __('Instagram Master', 'Instagram master'), $widget_ops, $control_ops );
+	$this->WP_Widget( 'techgasp_instagrammaster_widget', __('Instagram Master', 'instagram master'), $widget_ops, $control_ops );
 	}
 	
 	function widget( $args, $instance ) {
@@ -30,8 +30,7 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 		// Display the widget title
 	if ( $title )
 		echo $before_title . $name . $after_title;
-		//Display Instagram Photos
-	
+
 		//Display View on Instagram Button
 	if ( $show_instagrambutton )
 		echo '<a href="http://instagram.com/'.$username.'?ref=badge" class="ig-b- ig-b-v-24" target="_blank"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>';
@@ -54,6 +53,7 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
 		<b>Check the buttons to be displayed:</b>
+	<hr>
 	<p>
 	<input type="checkbox" <?php checked( (bool) $instance['title'], true ); ?> id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><b><?php _e('Display Widget Title', 'instagram master'); ?></b></label></br>
@@ -68,7 +68,9 @@ class techgasp_instagrammaster_widget extends WP_Widget {
 	<input id="<?php echo $this->get_field_id( 'username' ); ?>" name="<?php echo $this->get_field_name( 'username' ); ?>" value="<?php echo $instance['username']; ?>" style="width:auto;" />
 	</p>
 	<hr>
-	<p><b>Instagram Master Advanced Version:</b> contains the extra Instagram Photo Gallery. Also includes shortcode framework.</p>
+	<p>Instagram Photo Display Options. Upgrade to Advanced Version.</p>
+	<hr>
+	<p>You have <b>Instagram Master Lite Version</b>. Upgrade to Advanced Version.</p>
 	<p><a class="button-primary" href="http://wordpress.techgasp.com/instagram-master/" target="_blank" title="Instagram Master Advanced Version">Instagram Master Advanced Version</a></p>
 	<?php
 	}
