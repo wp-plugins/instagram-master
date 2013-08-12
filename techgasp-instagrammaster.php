@@ -36,7 +36,6 @@ define('TECHGASP_INSTAGRAMMASTER_NICK', 'Instagram Master');
 require_once('techgasp-instagrammaster-widget.php');
 
 // HOOK INVITATION
-require_once('techgasp-instagrammaster-invite.php');
 
     class techgasp_instagrammaster
     {
