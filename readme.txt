@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, instagram, techgasp, sharing, photo, picture, gallery, free, phone, application, plugin, widget
 Requires at least: 3.5
-Tested up to: 3.6.1
+Tested up to: 3.7
 Stable tag: 4.0
 License: GPLv2 or later
 
