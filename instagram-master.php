@@ -2,7 +2,7 @@
 /**
 Plugin Name: Instagram Master
 Plugin URI: http://wordpress.techgasp.com/instagram-master/
-Version: 4.0
+Version: 4.0.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: instagram-master
@@ -34,22 +34,13 @@ define('INSTAGRAM_MASTER_ID', 'instagram-master');
 define('INSTAGRAM_MASTER_NICK', 'Instagram Master');
 
 // HOOK WIDGET
-require_once('includes/instagram-master-widget.php');
+require_once( dirname( __FILE__ ) . '/includes/instagram-master-widget.php');
 
 // HOOK INVITATION
 
 // HOOK SHORTCODE
 
 	class instagram_master{
-		/** function/method
-		* Usage: return absolute file path
-		* Arg(1): string
-		* Return: string
-		*/
-		public static function file_path($file)
-		{
-			return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
-		}
 		/** function/method
 		* Usage: hooking the plugin options/settings
 		* Arg(0): null
@@ -83,7 +74,7 @@ require_once('includes/instagram-master-widget.php');
 			}
 			$plugin_id = INSTAGRAM_MASTER_ID;
 			// display options page
-			include(self::file_path('includes/instagram-master-admin.php'));
+			include( dirname( __FILE__ ) . '/includes/instagram-master-admin.php');
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -93,7 +84,7 @@ require_once('includes/instagram-master-widget.php');
 		 public static function instagram_master_widget()
 		{
 			// display widget page
-			include(self::file_path('includes/instagram-master-widget.php'));
+			include( dirname( __FILE__ ) . '/includes/instagram-master-widget.php');
 		}
 		/** function/method
 		* Usage: filtering the content
@@ -121,7 +112,6 @@ require_once('includes/instagram-master-widget.php');
 		{
 		add_action('admin_init', array('instagram_master', 'instagram_master_register'));
 		add_action('admin_menu', array('instagram_master', 'menu'));
-		
 		}
 	add_filter('the_content', array('instagram_master', 'content_with_quote'));
 endif;
