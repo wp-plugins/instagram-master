@@ -2,7 +2,7 @@
 /**
 Plugin Name: Instagram Master
 Plugin URI: http://wordpress.techgasp.com/instagram-master/
-Version: 4.0.2
+Version: 4.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: instagram-master
