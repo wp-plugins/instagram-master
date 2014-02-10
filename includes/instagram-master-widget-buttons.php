@@ -1,6 +1,4 @@
 <?php
-//Load Helper class
-require_once( dirname( __FILE__ ) . '/instagram-master-helper.php');
 //Hook Widget
 add_action( 'widgets_init', 'instagram_master_widget_buttons' );
 //Register Widget
