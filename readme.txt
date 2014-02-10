@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, instagram, techgasp, sharing, photo, picture, gallery, free, phone, application, plugin, widget
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.1
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Instagram Master let's your show your latest Instagram photos and View on Instagram Button inside any widget position.
@@ -25,20 +25,25 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 **LITE Version Contains:**
 
-* Option to Display or Hide Widget Title
-* View on Instagram Button
+* Display, Hide or Change any Widget Title
+* Instagram Master Advanced Buttons Widget (includes the View on Instagram Button, available in small sleek size or default size)
 
 **ADVANCED Version Contains:**
 
-* Option to Display or Hide Widget Title
-* View on Instagram Button
-* Full adaptive Instagram photos display
-* Packed with beautiful html5 and CSS
-* Full Control over photo thumbnail sizes
-* Full Control over number of thumbnails to display
-* Thumbnails with username and tag labels
-* Amazing Instagram photo Comments, Love and Share
-* Shortcode Framework v2. Display buttons inside wordpress pages or post
+* Display, Hide or Change any Widget Title
+* Instagram Master Advanced Buttons Widget:
+* includes the view on Instagram Button, available in small sleek size or default size
+* works great under the Advanced Photo Widget to link your website and Instagram Profile
+* Instagram Master Advanced Photos Widget:
+* full adaptive Instagram photos display
+* packed with beautiful html5 and CSS
+* full Control over photo thumbnail sizes
+* full Control over number of thumbnails to display
+* thumbnails with username and tag labels
+* amazing Instagram photo Comments, Love and Share
+
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/instagram-master/)
 
 **ONLINE DEMO**
@@ -57,9 +62,9 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 == Installation ==
 
-1. Use the Wordpress Installer, Updater.
-2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Instagram Master" to configure the settings and your template widget position.
+1. Use the Wordpress Installer, Updater
+2. Activate in the "Plugins" admin panel
+3. Visit the "Widget Page | Instagram Master Widgets" to configure widget settings and your template widget position
 4. [Instagram Master Documentation](http://wordpress.techgasp.com/instagram-master-documentation/)
 
 
@@ -68,20 +73,21 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 = Issues with buttons display =
 * Please update to latest version. Up-to-date API's are available
 
-= Where are my instagram photos? =
-* Advanced Version contains View on Instagram Button plus the Display of Instagram Photos.
+= Where are my widgets? =
+* Advanced Version Add-ons contains all widgets
 * [Advanced Version Link](http://wordpress.techgasp.com/instagram-master/)
 
-= Where is Shortcode? =
-* Advanced Version contains all plugin options and the Shortcode Framework v2, publish widget inside pages and posts
+= Insert Shortcode in Pages or Posts =
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [instagram-master-un]
+* Insert the individual shortcode into any page or post. [instagram-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/instagram-master/)
-* Insert the code into the page or post. [instagram-master]
 
-= What's this Shortcode Framework v2 =
-* It's a framework developed by TechGasp and built upon wordpress marvellous resources.
-* Allows users to quickly and easily display plugins or widgets inside their pages and posts.
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2.
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+= What's this Shortcode Framework v3 =
+* It's a framework developed by TechGasp and built upon wordpress marvellous resources
+* Allows users to quickly and easily display plugins or widgets inside their pages and posts
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3/)
 
 = Need More Help =
 * [Instagram Master Documentation](http://wordpress.techgasp.com/instagram-master-documentation)
@@ -90,16 +96,26 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 == Screenshots ==
 
-1. Widget with Instagram photo Display and View on Instagram Button. Vertical Display
-2. Widget with Instagram photo Display and View on Instagram Button. Horizontal Display
-3. Widget with Instagram photo Display and View on Instagram Button. Last Instagram photo
+1. Instagram Master Advanced Photo Widget + Instagram Master Advanced Buttons Widget. Vertical Display
+2. Instagram Master Advanced Photo Widget + Instagram Master Advanced Buttons Widget. Horizontal Display
+3. Instagram Master Advanced Photo Widget + Instagram Master Advanced Buttons Widget. Last Instagram photo
 4. Instagram photo page
 5. Instagram photo page with love and comments
-6. Widget inside pages and posts. Shortcode framework implementation. Vertical Display
-7. Widget inside pages and posts. Shortcode framework implementation. Horizontal Display, Full post, page width
+6. Shortcode inside pages and posts. Shortcode framework implementation. Vertical Display
+7. Shortcode inside pages and posts. Shortcode framework implementation. Horizontal Display, Full post, page width
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Instagram API
+* Instagram Master Advanced Buttons Widget
+* Instagram Master Advanced Photos Widget
 
 = 4.1 =
 * Wordpress 3.8 Ready
@@ -150,8 +166,11 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new TechGasp Plugin Framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release
