@@ -2,7 +2,7 @@
 /**
 Plugin Name: Instagram Master
 Plugin URI: http://wordpress.techgasp.com/instagram-master/
-Version: 4.3.6
+Version: 4.4.1.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: instagram-master
@@ -26,12 +26,16 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('instagram_master')) :
+///////DEFINE DIR///////
+define( 'INSTAGRAM_MASTER_DIR', plugin_dir_path( __FILE__ ) );
+///////DEFINE URL///////
+define( 'INSTAGRAM_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
-define('INSTAGRAM_MASTER_ID', 'instagram-master');
+define( 'INSTAGRAM_MASTER_ID', 'instagram-master');
 ///////DEFINE VERSION///////
-define( 'instagram_master_VERSION', '4.3.6' );
+define( 'INSTAGRAM_MASTER_VERSION', '4.4.1.4' );
 global $instagram_master_version, $instagram_master_name;
-$instagram_master_version = "4.3.6"; //for other pages
+$instagram_master_version = "4.4.1.4"; //for other pages
 $instagram_master_name = "Instagram Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'instagram_master_installed_version', $instagram_master_version );
@@ -43,6 +47,8 @@ update_option( 'instagram_master_name', $instagram_master_name );
 }
 // HOOK ADMIN
 require_once( dirname( __FILE__ ) . '/includes/instagram-master-admin.php');
+// HOOK ADMIN SETTINGS PAGE » ONLY ADVANCED
+require_once( dirname( __FILE__ ) . '/includes/instagram-master-admin-settings-wide.php');
 // HOOK ADMIN IN & UN SHORTCODE
 require_once( dirname( __FILE__ ) . '/includes/instagram-master-admin-shortcodes.php');
 // HOOK ADMIN WIDGETS
@@ -53,11 +59,13 @@ require_once( dirname( __FILE__ ) . '/includes/instagram-master-admin-addons.php
 require_once( dirname( __FILE__ ) . '/includes/instagram-master-admin-updater.php');
 // HOOK WIDGET INSTAGRAM BUTTONS
 require_once( dirname( __FILE__ ) . '/includes/instagram-master-widget-buttons.php');
+// HOOK WIDGET INSTAGRAM EMBED BASIC
+require_once( dirname( __FILE__ ) . '/includes/instagram-master-widget-embed-basic.php');
 
 class instagram_master{
 //REGISTER PLUGIN
 public static function instagram_master_register(){
-register_setting(INSTAGRAM_MASTER_ID, 'tsm_quote');
+register_activation_hook( __FILE__, array( __CLASS__, 'instagram_master_activate' ) );
 }
 public static function content_with_quote($content){
 $quote = '<p>' . get_option('tsm_quote') . '</p>';
@@ -65,10 +73,15 @@ $quote = '<p>' . get_option('tsm_quote') . '</p>';
 }
 //SETTINGS LINK IN PLUGIN MANAGER
 public static function instagram_master_links( $links, $file ) {
-	if ( $file == plugin_basename( dirname(__FILE__).'/instagram-master.php' ) ) {
-		$links[] = '<a href="' . admin_url( 'admin.php?page=instagram-master' ) . '">'.__( 'Settings' ).'</a>';
+if ( $file == plugin_basename( dirname(__FILE__).'/instagram-master.php' ) ) {
+		if( is_network_admin() ){
+		$techgasp_plugin_url = network_admin_url( 'admin.php?page=instagram-master' );
+		}
+		else {
+		$techgasp_plugin_url = admin_url( 'admin.php?page=instagram-master' );
+		}
+	$links[] = '<a href="' . $techgasp_plugin_url . '">'.__( 'Settings' ).'</a>';
 	}
-
 	return $links;
 }
 
@@ -100,7 +113,9 @@ update_option( 'instagram_master_newest_version', $r->new_version );
 }
 }
 }
-
+//Remove WP Updater
+// Advanced Updater
+//Updater Label Message
 //END CLASS
 }
 if ( is_admin() ){

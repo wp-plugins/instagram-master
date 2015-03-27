@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, instagram, techgasp, sharing, photo, picture, gallery, free, phone, application, plugin, widget
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.6
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Instagram Master let's your show your latest Instagram photos and View on Instagram Button inside any widget position.
@@ -26,14 +26,26 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 **LITE Version Contains:**
 
 * Display, Hide or Change any Widget Title
-* Instagram Master Advanced Buttons Widget (includes the View on Instagram Button, available in small sleek size or default size)
+* Instagram Master Advanced Buttons Widget:
+* includes the view on Instagram Button, available in small sleek size or default size
+* works great under the Advanced Photo Widget to link your website and Instagram Profile
+
+* Instagram Master Basic Responsive Widget:
+* Automatically retrieves your latest video or image
+* Displays Follow, Likes and Comments for max "viralness"
 
 **ADVANCED Version Contains:**
 
 * Display, Hide or Change any Widget Title
+
 * Instagram Master Advanced Buttons Widget:
 * includes the view on Instagram Button, available in small sleek size or default size
 * works great under the Advanced Photo Widget to link your website and Instagram Profile
+
+* Instagram Master Basic Responsive Widget:
+* Light, Fast Loading widget to manually display a single Instagram Video or Image
+* Displays Follow, Likes and Comments for max "viralness"
+
 * Instagram Master Advanced Photos Widget:
 * full adaptive Instagram photos display
 * packed with beautiful html5 and CSS
@@ -41,6 +53,10 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 * full Control over number of thumbnails to display
 * thumbnails with username and tag labels
 * amazing Instagram photo Comments, Love and Share
+
+* Instagram Master Advanced Responsive Embed Widget:
+* Includes 2 displays options. Automatically retrieve your latest Instagram Video, Photo or manually select a single Instagram Video or Photo
+* Displays Follow, Likes and Comments for max "viralness"
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -103,11 +119,39 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 3. Instagram Master Advanced Photo Widget + Instagram Master Advanced Buttons Widget. Last Instagram photo
 4. Instagram photo page
 5. Instagram photo page with love and comments
-6. Shortcode inside pages and posts. Shortcode framework implementation. Vertical Display
-7. Shortcode inside pages and posts. Shortcode framework implementation. Horizontal Display, Full post, page width
+6. Instagram Master Basic Responsive Embed with follow, love and comments
+7. Instagram Master Advanced Responsive Embed with follow, love and comments
+8. Shortcode inside pages and posts. Shortcode framework implementation. Vertical Display
+9. Shortcode inside pages and posts. Shortcode framework implementation. Horizontal Display, Full post, page width
 
 
 == Changelog ==
+
+= 4.4.1.4 =
+* Getting all widget titles network ready
+
+= 4.4.1.3 =
+* Tweaking Updater
+* Adding user customizable CSS styling to Instagram Master Advanced Photo Widget
+* Adding System Wide Settings page for easy management
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+* Adding Instagram Master Basic Responsive Embed
+* Adding Instagram Master Advanced Responsive Embed
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
+* Instagram Button tweaked
 
 = 4.3.6 =
 * Added automatic deletion of site_transients
