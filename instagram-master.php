@@ -2,7 +2,7 @@
 /**
 Plugin Name: Instagram Master
 Plugin URI: http://wordpress.techgasp.com/instagram-master/
-Version: 4.4.1.4
+Version: 4.4.1.5
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: instagram-master
@@ -33,9 +33,9 @@ define( 'INSTAGRAM_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
 define( 'INSTAGRAM_MASTER_ID', 'instagram-master');
 ///////DEFINE VERSION///////
-define( 'INSTAGRAM_MASTER_VERSION', '4.4.1.4' );
+define( 'INSTAGRAM_MASTER_VERSION', '4.4.1.5' );
 global $instagram_master_version, $instagram_master_name;
-$instagram_master_version = "4.4.1.4"; //for other pages
+$instagram_master_version = "4.4.1.5"; //for other pages
 $instagram_master_name = "Instagram Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'instagram_master_installed_version', $instagram_master_version );

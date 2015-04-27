@@ -1,9 +1,9 @@
 === Instagram Master ===
-Contributors: Techgasp
+Contributors: TechGasp
 Tags: wordpress, instagram, techgasp, sharing, photo, picture, gallery, free, phone, application, plugin, widget
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 4.4.1.4
+Tested up to: 4.2
+Stable tag: 4.4.1.5
 License: GPLv2 or later
 
 Instagram Master let's your show your latest Instagram photos and View on Instagram Button inside any widget position.
@@ -126,6 +126,10 @@ ERROR CONFLICTS FREE - NO USE OF JAVASCRPT OR AJAX
 
 
 == Changelog ==
+
+= 4.4.1.5 =
+* Wordpress 4.2 ready
+* Fixing Warning
 
 = 4.4.1.4 =
 * Getting all widget titles network ready
